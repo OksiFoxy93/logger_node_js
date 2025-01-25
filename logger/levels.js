@@ -1,4 +1,3 @@
-
 const levels = {
     INFO: "info",
     WARNING: "warning",

@@ -1,57 +1,22 @@
-[34m[2025-01-23T18:17:10.669Z], INFO: Info message[39m 
-[33m[2025-01-23T18:17:10.685Z], WARNING: Warning message[39m 
-[31m[2025-01-23T18:17:10.685Z], ERROR: Error message[39m 
-[34m[2025-01-23T18:17:20.687Z], INFO: 2025-01-23T18:17:20.687Z[39m 
-[34m[2025-01-23T18:17:30.687Z], INFO: 2025-01-23T18:17:30.687Z[39m 
-[33m[2025-01-23T18:17:53.055Z], WARNING: Warning message[39m 
-[34m[2025-01-23T18:17:53.051Z], INFO: Info message[39m 
-[31m[2025-01-23T18:17:53.055Z], ERROR: Error message[39m 
-[34m[2025-01-23T18:18:51.526Z], INFO: Info message[39m 
-[33m[2025-01-23T18:18:51.530Z], WARNING: Warning message[39m 
-[31m[2025-01-23T18:18:51.530Z], ERROR: Error message[39m 
-[34m[2025-01-23T18:19:42.785Z], INFO: Info message[39m 
-[33m[2025-01-23T18:19:42.788Z], WARNING: Warning message[39m 
-[31m[2025-01-23T18:19:42.789Z], ERROR: Error message[39m 
-[34m[2025-01-23T18:20:19.518Z], INFO: Info message[39m 
-[33m[2025-01-23T18:20:19.524Z], WARNING: Warning message[39m 
-[31m[2025-01-23T18:20:19.525Z], ERROR: Error message[39m 
-[34m[2025-01-23T18:22:50.749Z], INFO: Info message[39m 
-[33m[2025-01-23T18:22:50.753Z], WARNING: Warning message[39m 
-[31m[2025-01-23T18:22:50.753Z], ERROR: Error message[39m 
-[34m[2025-01-23T18:28:01.141Z], INFO: Info message[39m 
-[31m[2025-01-23T18:28:01.145Z], ERROR: Error message[39m 
-[33m[2025-01-23T18:28:01.145Z], WARNING: Warning message[39m 
-[34m[2025-01-23T18:40:13.465Z], INFO: Info message[39m 
-[33m[2025-01-23T18:40:13.468Z], WARNING: Warning message[39m 
-[31m[2025-01-23T18:40:13.468Z], ERROR: Error message[39m 
-[34m[2025-01-23T18:47:44.116Z], INFO: Info message[39m 
-[31m[2025-01-23T18:47:44.120Z], ERROR: Error message[39m 
-[33m[2025-01-23T18:47:44.120Z], WARNING: Warning message[39m 
-[34m[2025-01-23T18:48:54.871Z], INFO: Info message[39m 
-[33m[2025-01-23T18:48:54.875Z], WARNING: Warning message[39m 
-[31m[2025-01-23T18:48:54.875Z], ERROR: Error message[39m 
-[34m[2025-01-23T18:49:04.879Z], INFO: 2025-01-23T18:49:04.879Z[39m 
-[34m[2025-01-23T18:49:14.881Z], INFO: 2025-01-23T18:49:14.881Z[39m 
-[34m[2025-01-23T18:49:24.881Z], INFO: 2025-01-23T18:49:24.881Z[39m 
-[34m[2025-01-23T18:49:34.883Z], INFO: 2025-01-23T18:49:34.883Z[39m 
-[34m[2025-01-23T18:49:44.883Z], INFO: 2025-01-23T18:49:44.883Z[39m 
-[34m[2025-01-23T18:51:54.630Z], INFO: Info message[39m 
-[33m[2025-01-23T18:51:54.633Z], WARNING: Warning message[39m 
-[31m[2025-01-23T18:51:54.633Z], ERROR: Error message[39m 
-[34m[2025-01-23T18:52:07.942Z], INFO: Info message[39m 
-[33m[2025-01-23T18:52:07.947Z], WARNING: Warning message[39m 
-[31m[2025-01-23T18:52:07.947Z], ERROR: Error message[39m 
-[33m[2025-01-23T18:54:25.116Z], WARNING: Warning message[39m 
-[34m[2025-01-23T18:54:25.111Z], INFO: Info message[39m 
-[31m[2025-01-23T18:54:25.116Z], ERROR: Error message[39m 
-[34m[2025-01-23T18:55:08.255Z], INFO: Info message[39m 
-[33m[2025-01-23T18:55:08.259Z], WARNING: Warning message[39m 
-[31m[2025-01-23T18:55:08.259Z], ERROR: Error message[39m 
-[34m[2025-01-23T18:56:05.281Z], INFO: Info message[39m 
-[33m[2025-01-23T18:56:05.285Z], WARNING: Warning message[39m 
-[31m[2025-01-23T18:56:05.285Z], ERROR: Error message[39m 
-[34m[2025-01-23T18:56:16.886Z], INFO: Info message[39m 
-[33m[2025-01-23T18:56:16.890Z], WARNING: Warning message[39m 
-[31m[2025-01-23T18:56:16.890Z], ERROR: Error message[39m 
-[34m[2025-01-23T18:56:26.894Z], INFO: 2025-01-23T18:56:26.894Z[39m 
-[34m[2025-01-23T18:56:36.895Z], INFO: 2025-01-23T18:56:36.895Z[39m 
+PROD: [31m[2025-01-25T15:18:42.129Z], ERROR: TypeError: Both arguments must be numbers.[39m
+[31m    at triggerError (file:///C:/Pet%20project/NODE%20JS%20Hillel/Logg/index.js:8:15)[39m
+[31m    at file:///C:/Pet%20project/NODE%20JS%20Hillel/Logg/index.js:14:1[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)[39m
+[31m    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)[39m
+[31m    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:122:5)[39m
+PROD: [31m[2025-01-25T15:18:42.131Z], ERROR: Error message[39m
+QA: [31m[2025-01-25T15:19:33.316Z], ERROR: TypeError: Both arguments must be numbers.[39m
+[31m    at triggerError (file:///C:/Pet%20project/NODE%20JS%20Hillel/Logg/index.js:8:15)[39m
+[31m    at file:///C:/Pet%20project/NODE%20JS%20Hillel/Logg/index.js:14:1[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)[39m
+[31m    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)[39m
+[31m    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:122:5)[39m
+QA: [33m[2025-01-25T15:19:33.318Z], WARNING: Warning message[39m
+QA: [31m[2025-01-25T15:19:33.318Z], ERROR: Error message[39m
+PROD: [31m[2025-01-25T15:25:57.951Z], ERROR: TypeError: Both arguments must be numbers.[39m
+[31m    at triggerError (file:///C:/Pet%20project/NODE%20JS%20Hillel/Logg/index.js:8:15)[39m
+[31m    at file:///C:/Pet%20project/NODE%20JS%20Hillel/Logg/index.js:14:1[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)[39m
+[31m    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)[39m
+[31m    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:122:5)[39m
+PROD: [31m[2025-01-25T15:25:57.953Z], ERROR: Error message[39m
