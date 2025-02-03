@@ -1,22 +1,16 @@
-PROD: [31m[2025-01-25T15:18:42.129Z], ERROR: TypeError: Both arguments must be numbers.[39m
-[31m    at triggerError (file:///C:/Pet%20project/NODE%20JS%20Hillel/Logg/index.js:8:15)[39m
-[31m    at file:///C:/Pet%20project/NODE%20JS%20Hillel/Logg/index.js:14:1[39m
-[31m    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)[39m
-[31m    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)[39m
-[31m    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:122:5)[39m
-PROD: [31m[2025-01-25T15:18:42.131Z], ERROR: Error message[39m
-QA: [31m[2025-01-25T15:19:33.316Z], ERROR: TypeError: Both arguments must be numbers.[39m
-[31m    at triggerError (file:///C:/Pet%20project/NODE%20JS%20Hillel/Logg/index.js:8:15)[39m
-[31m    at file:///C:/Pet%20project/NODE%20JS%20Hillel/Logg/index.js:14:1[39m
-[31m    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)[39m
-[31m    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)[39m
-[31m    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:122:5)[39m
-QA: [33m[2025-01-25T15:19:33.318Z], WARNING: Warning message[39m
-QA: [31m[2025-01-25T15:19:33.318Z], ERROR: Error message[39m
-PROD: [31m[2025-01-25T15:25:57.951Z], ERROR: TypeError: Both arguments must be numbers.[39m
-[31m    at triggerError (file:///C:/Pet%20project/NODE%20JS%20Hillel/Logg/index.js:8:15)[39m
-[31m    at file:///C:/Pet%20project/NODE%20JS%20Hillel/Logg/index.js:14:1[39m
-[31m    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)[39m
-[31m    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)[39m
-[31m    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:122:5)[39m
-PROD: [31m[2025-01-25T15:25:57.953Z], ERROR: Error message[39m
+[31m[2025-02-03T17:00:10.650Z], ERROR: TypeError: Both arguments must be numbers.[39m
+[31m In file: Logg/index.js[39m
+[31m[39m[34m[2025-02-03T17:00:10.653Z], INFO: Info message[39m
+[34m[39m[31m[2025-02-03T17:00:10.653Z], ERROR: Error message[39m
+[31m[39m[33m[2025-02-03T17:00:10.653Z], WARNING: Warning message[39m
+[33m[39m[31m[2025-02-03T17:00:22.786Z], ERROR: TypeError: Both arguments must be numbers.[39m
+[31m In file: Logg/index.js[39m
+[31m[39m[34m[2025-02-03T17:00:22.788Z], INFO: Info message[39m
+[34m[39m[33m[2025-02-03T17:00:22.789Z], WARNING: Warning message[39m
+[33m[39m[31m[2025-02-03T17:00:22.789Z], ERROR: Error message[39m
+[31m[39m[31m[2025-02-03T17:02:27.636Z], ERROR: TypeError: Both arguments must be numbers.[39m
+[31m In file: Logg/index.js[39m
+[31m[39m[34m[2025-02-03T17:02:27.638Z], INFO: Info message[39m
+[34m[39m[33m[2025-02-03T17:02:27.638Z], WARNING: Warning message[39m
+[33m[39m[31m[2025-02-03T17:02:27.638Z], ERROR: Error message[39m
+[31m[39m

@@ -2,7 +2,8 @@ import fs from "node:fs"
 import path from "node:path"
 import levels from "./levels.js"
 import formatMessage from "./formatter.js"
-import { APP_ENV } from "../config.js";
+import { APP_ENV, DEV_ENV, PROD_ENV, QA_ENV } from "../config.js";
+import { LOG, loggerEvent } from "../helpers/events.js";
 
 class Logger {
 
@@ -14,35 +15,23 @@ class Logger {
         }
     }
 
-    __log(level, details) {
-        let formattedMsg;
-
-        if (details instanceof Error) {
-            formattedMsg = formatMessage(level, `${ details.stack }`);
-        } else {
-            formattedMsg = formatMessage(level, details);
-        }
+    __log(level, msg) {
+        const formattedMsg = formatMessage(level, msg);
 
         switch(APP_ENV) {
-            case 'dev': return console.log(formattedMsg);
+            case DEV_ENV:
+                loggerEvent.emit(LOG, this.logPath, formattedMsg)
+                break;
 
-            case 'qa':
+            case QA_ENV:
                 if (level === levels.ERROR || level === levels.WARNING) {
-                    fs.appendFile(this.logPath, `QA: ${formattedMsg}\n`, (err) => {
-                        if (err) {
-                            console.error("Error while trying to append data to file:", err.message);
-                        }
-                    });
+                    loggerEvent.emit(LOG, this.logPath, `QA: ${formattedMsg}`)
                 }
                 break;
 
-            case 'prod':
+            case PROD_ENV:
                 if (level === levels.ERROR) {
-                    fs.appendFile(this.logPath, `PROD: ${formattedMsg}\n`, (err) => {
-                        if (err) {
-                            console.error("Error while trying to append data to file:", err.message);
-                        }
-                    });
+                    loggerEvent.emit(LOG, this.logPath, `PROD: ${formattedMsg}`)
                 }
                 break;
 
