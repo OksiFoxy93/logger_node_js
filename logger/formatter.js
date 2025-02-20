@@ -1,5 +1,6 @@
 import chalk from "chalk";
-import { APP_ENV, DEV_ENV } from "../config.js";
+import { DEV_ENV, PROD_ENV } from "../config.js";
+import levels from "./levels.js";
 
 function getFileName(error) {
     const { stack } = error;
@@ -23,31 +24,31 @@ function getFileName(error) {
     return fileName;
 }
 
-function formatMessage(level, msg) {
-    const timestemp = new Date().toISOString()
+const formatMessage = (level, msg, env) => {
+    const timestemp = new Date().toISOString();
+    const levelText = level.toUpperCase();
+    const baseMsg = `[${timestemp}], ${levelText}: ${msg}\n`;
 
-    switch(level) {
-        case 'info':
-            return chalk.blue(`[${timestemp}], INFO: ${msg}\n`)
-
-        case 'warning':
-            return chalk.yellow(`[${timestemp}], WARNING: ${msg}\n`)
-
-        case 'error':
-            if (msg instanceof Error) {
-                const fileName = getFileName(msg);
-
-                if (APP_ENV === DEV_ENV) {
-                    return chalk.red(`[${timestemp}], ERROR: ${ msg.name }: ${ msg.message }\n In file: ${ fileName }\n`)
-                }
-            }
-            return chalk.red(`[${timestemp}], ERROR: ${ msg }\n`)
-
-        default:
-        return chalk.gray(`[${timestemp}], UNKNOW: ${msg}`)
-
+    if (env === PROD_ENV && level !== levels.ERROR) {
+        return;
     }
 
-}
+    let formattedMsg = baseMsg;
+    if (env === DEV_ENV && level === levels.ERROR && msg instanceof Error) {
+        const fileName = getFileName(msg);
+        formattedMsg += `In file: ${fileName}\n`;
+    }
+
+    switch (level) {
+        case levels.INFO:
+            return chalk.blue(formattedMsg);
+        case levels.WARNING:
+            return chalk.yellow(formattedMsg);
+        case levels.ERROR:
+            return chalk.red(formattedMsg);
+        default:
+            return chalk.gray(formattedMsg);
+    }
+};
 
 export default formatMessage
